@@ -40,6 +40,11 @@ body {
 .w_link5:hover { text-decoration: none; color:#023464; }
 .w_link5:visited { color:#023464; }
 
+.w_link6 { display:inline-block; color:#FFF; background: #fcd21b; border-radius: 50px; width:100px; height:100px; margin-top:50px; margin-bottom:30px; padding-top:37px; font-size:2rem; }
+
+.w_link6:hover { text-decoration: none; color:#023464; }
+.w_link6:visited { color:#023464; }
+
 
 p {
     font-size: 20px;
@@ -105,12 +110,35 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+
+
+
+#myVideo{
+			position: absolute;
+			z-index: 0;
+			right: 0;
+			bottom: 0;
+			top:0;
+			right:0;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+	 		background-color: black; /* in case the video doesn't fit the whole page*/
+	  		background-image: /* our video */;
+	  		background-position: center center;
+	  		background-size: contain;
+	   		object-fit: cover; /*cover video background */
+		}
+
+
+
+
 header {
     text-align: center;
     color: #fff;
-    background: url("../img/portfolio/background_image.png") no-repeat center top;
-    height:1267px;
+    
     width:100%;
+    
 }
 
 header .container {
@@ -126,7 +154,7 @@ header img {
 }
 
 
-header .intro-text { z-index:99; margin-top:440px;}
+header .intro-text { z-index:99; margin:440px 0 350px;}
 
 header .intro-text .name {
     display: block;
