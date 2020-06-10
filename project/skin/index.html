@@ -1,0 +1,414 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>스타미 피부과</title>
+<link rel="shortcut icon" href="images/starme_favicon.ico">
+<!--opengraph-->
+<meta property="og:type" content="website">
+<meta property="og:title" content="스타미">
+<meta property="og:url" content="http://dnjfht.dothome.co.kr">
+<meta property="og:image" content="images/opengraph.jpg">
+<meta property="og:description" content="여러분의 피부를 책임지는 스타미피부과">
+<!--//opengraph-->    
+   
+<link href="main.css" rel="stylesheet" type="text/css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/common2.js"></script>    
+<script>
+$(document).ready(function(){
+    
+    $('.bxslider3').slick({
+    dots: false,
+    infinite: true,
+    autoplay: false,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: false,
+    variableWidth: true
+    });
+    
+    $('.bxslider2').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
+    });
+    
+        
+
+        $(".dp2,.dp2-bg").hide();
+        
+        $("#gnb>li").mouseover(function(){
+           $(".dp2,.dp2-bg").stop().slideDown(); 
+        });
+        
+        $("#gnb>li").mouseout(function(){
+           $(".dp2,.dp2-bg").stop().slideUp(); 
+        });
+        
+         var slider = $('.bxslider').bxSlider({
+			auto: true,
+		});
+
+        
+        // 클릭시 멈춤 현상 해결 //
+		$(document).on('click','.bx-next, .bx-prev',function() {
+		slider.stopAuto();
+		slider.startAuto();
+		slider_01.stopAuto();
+		slider_01.startAuto();
+		});
+		$(document).on('mouseover','.bx-pager, #bx-pager1',function() {
+		slider.stopAuto();
+		slider.startAuto();
+		slider_01.stopAuto();
+		slider_01.startAuto();
+		slider_02.stopAuto();
+		slider_02.startAuto();
+		});	
+        
+    });    
+    </script> 
+</head>
+ 
+<body>
+    
+<div class="all_box">
+  <p class="all_title">SITEMAP</p>
+  <ul class="all_gnb">
+    <li><a href="sub/hospital.html">병원소개</a>
+    <ul class="all_dp2">
+    <li><a href="sub/hospital.html">연혁</a></li>
+    <li><a href="sub/hospital.html">의료진 소개</a></li>
+    <li><a href="sub/hospital.html">진료안내</a></li>
+    <li><a href="sub/hospital.html">찾아오시는 길</a></li>
+    </ul>
+    </li>
+      <li><a href="sub/skin.html">피부질환 클리닉</a>
+      <ul class="all_dp2">
+      <li><a href="sub/skin disease.html">백반증</a></li>
+      <li><a href="sub/skin disease.html">건선</a></li>
+      <li><a href="sub/skin disease.html">피부염</a></li>
+      <li><a href="sub/skin disease.html">무좀</a></li>
+      <li><a href="sub/skin disease.html">티눈, 사마귀</a></li>
+      <li><a href="sub/skin disease.html">내성발톱</a></li>
+      <li><a href="sub/skin disease.html">대상포진</a></li>
+      <li><a href="sub/skin disease.html">화상</a></li>
+      </ul>  
+      </li>
+      <li><a href="sub/special.html">스페셜클리닉</a>
+      <ul class="all_dp2">
+      <li><a href="sub/special.html"></a></li>
+      <li><a href="sub/special.html">여드름치료프로그램</a>
+      <li><a href="sub/special.html">미백치료프로그램</a></li>
+      <li><a href="sub/special.html">필러 &amp; 실리프팅</a></li>
+      <li><a href="sub/special.html">취업전략프로그램</a></li>
+      <li><a href="sub/special.html">웨딩맞춤프로그램</a></li>
+      <li><a href="sub/special.html">여름대비프로그램</a></li>
+      <li><a href="sub/special.html">임산부프로그램</a></li>
+      <li><a href="sub/special.html">탈모관리프로그램</a></li>
+      </ul>  
+      </li>
+      <li><a href="sub/skin.html">피부클리닉</a>
+      <ul class="all_dp2">
+      <li><a href="sub/skin.html">여드름</a></li>   
+      <li><a href="sub/skin.html">모공</a></li>
+      <li><a href="sub/skin.html">색소침착</a></li>
+      <li><a href="sub/skin.html">미백</a></li>   
+      <li><a href="sub/skin.html">탄력주름</a></li>
+      <li><a href="sub/skin.html">진정보습</a></li>
+      <li><a href="sub/skin.html">흉터</a></li>   
+      <li><a href="sub/skin.html">기미, 홍조</a></li>
+      </ul>  
+      </li>
+      <li><a href="sub/advice.html">상담예약</a>
+      <ul class="all_dp2">
+      <li><a href="sub/advice.html">카카오톡 실시간 상담</a></li>   
+      <li><a href="sub/advice.html">의료상담</a></li>
+      <li><a href="sub/advice.html">진료예약하기</a></li>
+      <li><a href="sub/advice.html">전화예약</a></li>   
+      </ul>  
+      </li>
+      <li><a href="sub/community.html">커뮤니티</a>
+      <ul class="all_dp2">
+      <li><a href="sub/community.html">치료전후 사진</a></li>   
+      <li><a href="sub/community.html">치료후기</a></li>
+      <li><a href="sub/community.html">이달의 이벤트</a></li>
+      <li><a href="sub/community.html">자주하는 질문</a></li>
+      <li><a href="sub/community.html">고객문의</a></li>
+      </ul>  
+      </li>
+    </ul>
+    <p class="close"><img src="images/btn_close.jpg" alt="전체메뉴닫기"></p>
+</div> 
+        
+<div id="advertisement"><!--advertisement-->
+<div id="advertisement_inner"><!--advertisement_inner-->
+<input type="checkbox">
+<p>오늘 하루 열지 않음</p>
+<h1 class="popup_x"><img src="images/popup_x.png" alt="팝업x창"></h1>
+</div><!--advertisement_inner-->
+</div><!--advertisement-->    
+<div id="header"><!--header-->
+
+<div id="top_header"><!--top_header-->
+<div id="top_header_inner"><!--top_header_inner-->
+<h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="스타미피부과 로고"></a></h1>   
+
+<div class="search"><!--search-->
+<form>
+<fieldset>
+<legend>검색영역</legend>
+<input type="text">
+<input type="image" src="images/%EB%8F%8B%EB%B3%B4%EA%B8%B0.png" alt="검색">    
+</fieldset>
+</form>
+</div><!--search-->
+    
+<div class="popular"><!--popular-->
+<p>최근 인기 검색어 &nbsp;&nbsp;1.. 여드름케어 <span class="yellow">NEW</span></p>    
+</div><!--popular-->    
+    
+<div class="popup_open"><!--popup_open-->
+<h1><img src="images/popup_open.png" alt="팝업오픈"></h1>    
+<p>팝업열기</p>  
+</div><!--popup_open-->    
+</div><!--top_header_inner-->
+</div><!--top_header-->
+    
+<div id="navi"><!--navi-->
+<div id="navi_inner"><!--navi_inner-->
+<div id="gnb"><!--gnb-->
+<ul class="util">
+<li><a href="sub/hospital.html">병원소개</a>
+<ul class="dp2">
+    <li><a href="sub/hospital.html">연혁</a></li>
+    <li><a href="sub/hospital.html">의료진 소개</a></li>
+    <li><a href="sub/hospital.html">진료안내</a></li>
+    <li><a href="sub/hospital.html">찾아오시는 길</a></li>
+    </ul>        
+</li>    
+<li><a href="sub/skin disease.html">피부질환클리닉</a>
+<ul class="dp2">
+      <li><a href="sub/skin disease.html">백반증</a></li>
+      <li><a href="sub/skin disease.html">건선</a></li>
+      <li><a href="sub/skin disease.html">피부염</a></li>
+      <li><a href="sub/skin disease.html">무좀</a></li>
+      <li><a href="sub/skin disease.html">티눈, 사마귀</a></li>
+      <li><a href="sub/skin disease.html">내성발톱</a></li>
+      <li><a href="sub/skin disease.html">대상포진</a></li>
+      <li><a href="sub/skin disease.html">화상</a></li>
+      </ul>    
+</li>
+<li><a href="sub/special.html">스페셜클리닉</a>
+<ul class="dp2">
+      <li><a href="sub/special.html"></a></li>
+      <li><a href="sub/special.html">여드름치료프로그램</a>
+      <li><a href="sub/special.html">미백치료프로그램</a></li>
+      <li><a href="sub/special.html">필러 &amp; 실리프팅</a></li>
+      <li><a href="sub/special.html">취업전략프로그램</a></li>
+      <li><a href="sub/special.html">웨딩맞춤프로그램</a></li>
+      <li><a href="sub/special.html">여름대비프로그램</a></li>
+      <li><a href="sub/special.html">임산부프로그램</a></li>
+      <li><a href="sub/special.html">탈모관리프로그램</a></li>
+      </ul>    
+</li>
+<li><a href="sub/skin.html">피부클리닉</a>
+<ul class="dp2">
+      <li><a href="sub/skin.html">여드름</a></li>   
+      <li><a href="sub/skin.html">모공</a></li>
+      <li><a href="sub/skin.html">색소침착</a></li>
+      <li><a href="sub/skin.html">미백</a></li>   
+      <li><a href="sub/skin.html">탄력주름</a></li>
+      <li><a href="sub/skin.html">진정보습</a></li>
+      <li><a href="sub/skin.html">흉터</a></li>   
+      <li><a href="sub/skin.html">기미, 홍조</a></li>
+      </ul>    
+</li>
+<li><a href="sub/advice.html">상담예약</a>
+<ul class="dp2">
+      <li><a href="sub/advice.html">카카오톡 실시간 상담</a></li>   
+      <li><a href="sub/advice.html">의료상담</a></li>
+      <li><a href="sub/advice.html">진료예약하기</a></li>
+      <li><a href="sub/advice.html">전화예약</a></li>   
+      </ul>    
+</li>
+<li><a href="sub/community.html">커뮤니티</a>
+<ul class="dp2">
+      <li><a href="sub/community.html">치료전후 사진</a></li>   
+      <li><a href="sub/community.html">치료후기</a></li>
+      <li><a href="sub/community.html">이달의 이벤트</a></li>
+      <li><a href="sub/community.html">자주하는 질문</a></li>
+      <li><a href="sub/community.html">고객문의</a></li>
+      </ul>    
+</li>
+</ul>
+            
+</div><!--gnb-->
+
+    
+<div class="all_menu"><!--all_menu-->
+<p>전체보기</p>
+<h1><img src="images/all_menu.png" alt="전체메뉴"></h1>
+</div><!--all_menu-->
+</div><!--navi_inner-->  
+<div class="dp2_bg"></div>
+</div><!--navi-->    
+</div><!--header--> 
+    
+<section id="visual"><!--visual-->
+<ul class="bxslider"><!--bxslider-->
+  <li class="b1">
+  촉촉하게 피부관리
+  </li>
+  <li class="b2">
+  촉촉하게 피부관리
+  </li>
+  <li class="b3">
+  촉촉하게 피부관리
+  </li>
+</ul><!--bxslider-->    
+</section><!--visual-->      
+    
+<div id="contents"><!--contents-->
+<div id="clinic"><!--clinic-->
+<div id="clinic_inner"><!--clinic_inner-->
+<div class="clinic_intro">
+<p class="t1">스타미 피부과 주요클리닉</p>
+<p class="t2">최고의 기술과 서비스로 편리하고 풍요로운 세상을 만들어갑니다.</p>
+</div>
+    
+<ul class="clinic img">
+<li><a href="#">
+<p class="t3">여드름 치료 프로그램</p>
+<p class="t4">최상의 서비스를 여러분들께<br>선사합니다.</p>
+<p class="t5">자세히 보기</p>
+</a></li>
+<li><a href="#">
+<p class="t3">필러 &amp; 실리프팅</p>
+<p class="t4">최상의 서비스를 여러분들께<br>선사합니다.</p>
+<p class="t5">자세히 보기</p>    
+</a></li>
+<li><a href="#">
+<p class="t3">여름 대비 프로그램</p>
+<p class="t4">최상의 서비스를 여러분들께<br>선사합니다.</p>
+<p class="t5">자세히 보기</p>     
+</a></li>    
+</ul>
+</div><!--clinic_inner-->
+</div><!--clinic-->
+    
+<div id="procedure"><!--procedure-->
+<div class="procedure_intro">
+<p class="t1">스타미 피부과 시술 소개</p>    
+<p class="t2">오직 스타미에서만 특화된 시술을 여러분들께  소개합니다.</p>    
+</div>    
+    
+<div class="procedure_desc">
+<ul class="bxslider2 slider1">
+<li><a href="#"><img src="images/procedure1.png" alt="물광주사"></a></li>    
+<li><a href="#"><img src="images/procedure2.png" alt="레이저시술"></a></li>
+<li><a href="#"><img src="images/procedure3.png" alt="동안필러"></a></li>
+</ul>    
+</div>     
+</div><!--procedure-->
+ 
+<div class="before_after">
+<div class="before_after_intro">
+<p class="t1">치료 전후 사진</p>
+<p class="t2">스타미는 완벽한 치료를 목적으로 하고 있습니다.</p> 
+</div>
+    
+<div class="before_after_desc">
+<h1><a href="#"><img src="images/before_after.1.png" alt="대표사진"></a></h1>
+<p class="detail"><a href="#">자세히<br>보기</a></p>    
+    
+<ul class="bxslider3 slider">    
+<li><a href="#">
+<img src="images/before_after.3.png" alt="여드름"><p class="title">여드름</p>
+</a></li>
+<li><a href="#">
+<img src="images/before_after.4.png" alt=모공>
+<p class="title">모공</p>    
+</a></li>
+<li><a href="#"><img src="images/before_after.2.png" alt="백반증">
+<p class="title">백반증</p>    
+</a></li>
+<li><a href="#"><img src="images/before_after.5.png" alt="두피탈모">
+<p class="title">두피탈모</p>    
+</a></li>
+</ul>        
+</div>    
+</div>
+
+<div class="movie">
+<div class="movie_intro">
+<p class="t6">홍보영상</p>
+<p class="t7">영상으로 만나는 스타미피부과</p>
+</div>   
+<div class="movie_desc">
+<img src="images/movie.png" alt="movie">    
+</div>    
+</div>    
+
+<div class="news">
+<div class="news_intro">
+<p class="t1">스타미 피부과 병원 소식</p>
+<p class="t2">스타미 피부과의 새소식 전해드립니다.</p>
+</div>    
+
+<div class="news_desc">
+<ul class="refort">
+<li><a href="#">
+<img src="images/%EC%9D%B4%EB%B2%A4%ED%8A%B81.png" alt="event1">
+<p class="t8">[베스트후기 고객님을 찾아라]</p>
+<p class="t9">2020.02.10</p>
+<p class="t10">후기를 남겨주신 고객님들 중 한 분을 뽑아<br>
+무료로 시술할 기회를 드립니다.</p>
+</a></li>    
+<li><a href="#"><img src="images/%EC%9D%B4%EB%B2%A4%ED%8A%B82.png" alt="event2">
+<p class="t8">[홈페이지 리뉴얼 이벤트]</p>
+<p class="t9">2020.01.08</p>
+<p class="t10">스타미 피부과가 홈페이지 리뉴얼을 기념하여<br>
+여러분들께 푸짐한 선물을 드립니다.</p>
+</a></li>
+<li><a href="#"><img src="images/%EC%9D%B4%EB%B2%A4%ED%8A%B83.png" alt="event3">
+<p class="t8">[8월 이벤트 대축제]</p>
+<p class="t9">2020.02.01</p>
+<p class="t10">여름을 맞이하여 스타미 피부과에서 최대 52%까지 할인된 가격으로<br>
+고객님들을 찾아뵐 예정입니다!</p>
+</a></li>    
+</ul>       
+</div>        
+</div>        
+</div><!--contents-->    
+    
+<footer id="footer"><!--footer--> 
+    
+<ul class="foot_link" style="color:#FFF">
+<li><a href="#">개인정보처리방침</a></li>
+<li><a href="#">이용약관</a></li>
+</ul>
+    
+<address>스타미피부과 112-18-5054 &nbsp;&nbsp;&nbsp;ㅣ &nbsp;&nbsp;&nbsp;대표자:손효성<br>
+부산광역시 광역구 광역동 442-7번 2층<br>
+정보처리책임자 &nbsp;: &nbsp;유승민</address>
+    
+<ul class="sns">
+<li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+<li><a href="#"><img src="images/instar.png" alt="instar"></a></li>
+</ul>
+</footer><!--footer-->    
+    
+   
+<div class="gotop"><a href="#"><img src="images/btn_goTop.png" alt="위로가기"></a></div>      
+    
+</body>
+</html>
